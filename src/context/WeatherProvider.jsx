@@ -28,7 +28,7 @@ const WeatherProvider = ({children}) => {
 
             const appId = import.meta.env.VITE_API_KEY
 
-            const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city},${country}&limit=1&appid=${appId}`
+            const url = `https://api.openweathermap.org/geo/1.0/direct?q=${city},${country}&limit=1&appid=${appId}`
             //console.log(url)
 
             const {data} = await axios(url)
